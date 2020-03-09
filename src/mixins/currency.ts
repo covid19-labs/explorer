@@ -36,13 +36,11 @@ export default {
       bigNumberValue = bigNumberValue.times(rate || BigNumber.make(store.getters["currency/rate"]));
 
       const cryptos: { [key: string]: string } = {
-        ARK: "Ѧ",
-        BTC: "Ƀ",
-        ETH: "Ξ",
-        LTC: "Ł",
+        C19: "C19",
+        USD: "$"
       };
 
-      return [store.getters["network/token"], "BTC", "ETH", "LTC"].some((c) => currencyName.indexOf(c) > -1)
+      return [store.getters["network/token"], "USD"].some((c) => currencyName.indexOf(c) > -1)
         ? `${Number(bigNumberValue).toLocaleString(locale, {
             maximumFractionDigits: 8,
           })} ${cryptos[currencyName]}`
@@ -53,7 +51,7 @@ export default {
     },
 
     rawCurrency(value: number, currencyName: string): string {
-      return [store.getters["network/token"], "BTC", "ETH", "LTC"].some((c) => currencyName.indexOf(c) > -1)
+      return [store.getters["network/token"], "USD"].some((c) => currencyName.indexOf(c) > -1)
         ? value.toLocaleString(locale, {
             maximumFractionDigits: 8,
           })

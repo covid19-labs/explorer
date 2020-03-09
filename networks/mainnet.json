@@ -1,6 +1,6 @@
 {
   "title": "covid Mainnet Explorer",
-  "server": "http://167.179.86.184:4003/api/v2",
+  "server": "http://explorer.covidchain.com/api",
   "alias": "Main",
   "activeDelegates": "53",
   "rewardOffset": "1",
