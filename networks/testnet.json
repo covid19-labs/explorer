@@ -1,19 +1,20 @@
 {
-  "title": "TARK Explorer",
-  "server": "http://127.0.0.1:4003/api",
+  "title": "covid Testnet Explorer",
+  "server": "http://167.179.86.184:4003/api/v2",
   "alias": "Testnet local",
-  "activeDelegates": 51,
-  "rewardOffset": 75600,
+  "activeDelegates": "53",
+  "rewardOffset": "1",
   "currencies": [],
   "knownWallets": {},
   "defaults": {
-    "token": "TARK",
-    "symbol": "TѦ",
+    "token": "C19",
+    "symbol": "C19",
     "currency": null,
     "priceChartOptions": {
       "enabled": false,
       "period": "day",
       "type": "price"
-    }
+    },
+    "priceChart": false
   }
 }

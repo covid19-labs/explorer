@@ -1,19 +1,20 @@
 {
-  "title": "DARK Explorer",
-  "server": "https://dexplorer.ark.io/api",
+  "title": "covid Devnet Explorer",
+  "server": "http://167.179.86.184:4003/api/v2",
   "alias": "Development",
-  "activeDelegates": 51,
-  "rewardOffset": 10800,
+  "activeDelegates": "53",
+  "rewardOffset": "1",
   "currencies": [],
   "knownWallets": {},
   "defaults": {
-    "token": "DARK",
-    "symbol": "DѦ",
+    "token": "C19",
+    "symbol": "C19",
     "currency": null,
     "priceChartOptions": {
       "enabled": false,
       "period": "day",
       "type": "price"
-    }
+    },
+    "priceChart": false
   }
 }
